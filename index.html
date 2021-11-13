@@ -55,6 +55,8 @@
       document.body.append(scriptTag);
     }
 
+    sleep(2000);
+    
     if ('serviceWorker' in navigator) {
       // Service workers are supported. Use them.
       window.addEventListener('load', function () {
@@ -98,7 +100,7 @@
             );
             loadMainDartJs();
           }
-        }, 4000);
+        }, 2000);
       });
     } else {
       // Service workers not supported. Just drop the <script> tag.
